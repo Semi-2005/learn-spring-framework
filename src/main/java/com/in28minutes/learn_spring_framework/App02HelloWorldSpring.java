@@ -23,7 +23,6 @@ public class App02HelloWorldSpring {
 		System.out.println(context.getBean("person3Parameter"));
         System.out.println(context.getBean("person4Parameter"));
         System.out.println(context.getBean("person5Parameter"));
-        //Comment lin
 		
 		
 		
