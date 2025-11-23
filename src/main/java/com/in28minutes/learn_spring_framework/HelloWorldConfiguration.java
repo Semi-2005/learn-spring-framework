@@ -43,15 +43,19 @@ public class HelloWorldConfiguration {
         return new Person("Ali", 18, new Address("Besiktas", "Istanbul"));
     }
 
-    @Bean(name = "address")
+    @Bean(name = "address2")
     public Address address() {
-        return new Address("Baker Street", "London");
+        return new Address("Baker Street",City());
+    }
+    @Bean(name = "address4")
+    public Address address4() {
+        return new Address("Kahrolasi Istasyon Caddesi","Sivas");
     }
 
 
     @Bean(name = "address3")
     public Address address3() {
-        return new Address("Baker Street", "Sivas");
+        return new Address(Street(), "Sivas");
     }
 
 
@@ -66,8 +70,8 @@ public class HelloWorldConfiguration {
     }
 
     @Bean
-    public Person person4Parameter(String name, int age, Address address) {
-        return new Person(name, age, address);
+    public Person person4Parameter(String name, int age, Address address4) {
+        return new Person(name, age, address4);
     }
 
 
