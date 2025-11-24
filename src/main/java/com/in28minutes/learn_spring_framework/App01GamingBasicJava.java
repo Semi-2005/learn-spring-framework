@@ -8,21 +8,13 @@ import com.in28minutes.learn_spring_framework.game.superContraGame;
 public class App01GamingBasicJava {
 
 	public static void main(String[] args) {
-		
-	
-	
-		var superContraGame = new superContraGame();
-		var gameRunner = new GameRunner(superContraGame);
-		var marioGame = new MarioGame();
-		var gameRunnerMario = new GameRunner(marioGame);
-		var pacmanGame = new PacmanGame();
-		var gameRunnerPacman = new GameRunner(pacmanGame);
-		
-		
-	
-		gameRunner.run();
-		gameRunnerMario.run();
-		gameRunnerPacman.run();
+
+        var game = new PacmanGame();
+        var gameRunner = new GameRunner(game);
+        //Object creation and wiring of dependencies
+        //game is dependency of GameRunner
+
+        gameRunner.run();
 
 	}
 

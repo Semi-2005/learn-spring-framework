@@ -1,6 +1,6 @@
 package com.in28minutes.learn_spring_framework.game;
 
-public class PacmanGame implements gamingConsole {
+public class PacmanGame implements GamingConsole {
 
 	@Override
 	public void up() {
