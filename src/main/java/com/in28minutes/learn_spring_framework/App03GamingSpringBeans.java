@@ -9,6 +9,7 @@ public class App03GamingSpringBeans {
 
         try (var context = new AnnotationConfigApplicationContext(GamingConfiguration.class)) {
             context.getBean(GameRunner.class).run();
+
         }
     }
 
